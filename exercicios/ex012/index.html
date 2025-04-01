@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="500" height="400" poster="Imagens/foto-perfil-guanabara.png" autoplay loop controls>
+        <source src="midia/meuvideo.mp4"  type="video/mp4">
+        <source src="midia/meuvideo.m4v" type="video/mp4">
+        <source src="midia/Meuvideowebm.mkv" type="video/webm">
+        <source src="midia/meuvideo.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeos do You Tube</h1>
+    <iframe width="500" height="450"   src="https://youtube.com/shorts/WnxbkFTDFbU?si=LbLxpsMWxgcF-h5T" frameborder="0"></iframe>
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe width="300" height="200" src="<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1036591292?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="meuvideo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></iframe>
+</body>
+</html>
