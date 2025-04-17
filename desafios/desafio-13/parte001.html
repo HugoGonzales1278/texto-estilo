@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 255, 0.378);
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;/*Alinhamento horizontal*/
+            vertical-align: middle;
+        }
+
+        .numero{
+            text-align: right;
+        }
+       
+    </style>
+</head>
+<body>
+    <!--
+        Hierarquia de Tabelas (Simples)
+        Table=tabela
+            Table Row=Linha de tabela
+                Table Header= cabeçalho de tabela
+                Table Data= dado de tabela
+        -->
+    <h1>Minha tabela desafiadora</h1>
+    <table>
+        <tr><!--Primeira Linha-->
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td rowspan="2">
+                3
+            </td>
+            <td>
+                4
+            </td>
+
+        </tr>
+        <tr class="linha"><!--Segunda linha-->
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td><!--Terceira linha-->
+            <td class="numero">9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td><!--Quarta linha-->
+            <td colspan="2">11</td>
+            <td class="dado">12</td>
+        </tr>
+        <tr>
+            <!--Quarta linha-->
+            <td>13</td>
+            <td class="dado">14</td>
+            <td>15</td>
+
+        </tr>
+    </table>
+</body>
+</html>
