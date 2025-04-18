@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        thead{
+            border-collapse: collapse;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        th{
+            padding: 5px;
+            background-color: darkgray;
+            color: white;
+            font-weight: bold;
+        }
+        td{
+            text-align: center;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <caption>
+            Boletim Escolar
+        </caption>
+        <thead>
+            <tr>
+                <th scope="row" rowspan="2">AREA</th>
+                <th scope="row" rowspan="2">DISCIPLINAS</th>
+                <th scope="colgroup" colspan="2">NOTAS </th>
+                <th scope="row" rowspan="2">MEDIA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--2-->
+                <th></th>
+                <th></th>
+                <th>NOTA 1</th>
+                <th >NOTA 2</th>
+                <th></th>
+            </tr>
+            <tr><!--3-->
+                <td rowspan="4" scope="rowgroup">EXATAS</td>
+                <td>Matemática</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--4-->
+                <td>Física</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--5-->
+                <td>Química</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--6-->
+                <td>Biologia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--7-->
+                <th scope="colgroup" colspan="4">Média de Exatas</th>
+                <td>10</td>
+            </tr>
+            <tr><!--6-->
+                <td rowspan="2" scope="rowgroup">HUMANAS</td>
+                <td>História</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--6-->
+                <td>Geografia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr><!--6-->
+                <th scope="colgroup" colspan="4">Média de Humanas</th>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
