@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: yellowgreen;
+        }
+        col.cNome{
+            background-color: chartreuse;
+        }
+        col.cSexo{
+            background-color: yellow;
+        }
+        col.cIdade{
+            background-color: orange;
+        }
+        col.cProf{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Tabela na Prática
+    </h1>
+    <table>
+        <colgroup>
+            <col class="cNome">
+            <col class="cSexo" >
+            <col class="cIdade">
+            <col class="cProf">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>52</td>
+            <td>Esteticista</td>
+        </tr>
+        <tr>
+            <td>Joselina</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr class="destaque">
+            <td >Mariana</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Empresário</td>
+        </tr>
+        <tr>
+            <td>Liniki</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Lutador</td>
+        </tr>
+        <tr>
+            <td>Leonardo</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Enfermeiro</td>
+        </tr>
+    </table>
+</body>
+</html>
