@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+</head>
+<body>
+    <h1> teste check e radio button</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> 
+            <!--obs: input radio pode usar o legend para descrever o name para marcar apenas uma opção--><label for="isxfem">Femenino</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut" >Futebol</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis de mesa</label><br>
+            <input type="checkbox" name="esnat" id="iesnat">Natação<br>
+            <input type="checkbox" name="esvol" id="iesvol"> Vôlei<br>
+        </fieldset>
+        <!--Usar tecla alt para inserir dados de forma sincrona-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
