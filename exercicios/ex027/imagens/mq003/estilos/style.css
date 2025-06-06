@@ -2,11 +2,11 @@
 
 /*declarações gerais*/
 
-@media :-webkit-full-screen{
+@media all {
     *{
-        margin: 0px;
-        padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
+        margin:0px;
+        padding:0px;
+        font-family:Arial, Helvetica, sans-serif;
     }
     html, body{
         width: 100vw;
@@ -26,7 +26,7 @@
 
 @media screen and (orientation: portrait) {
     body{
-        background-image: url(../imagens/cev-portrait.jpg);
+        background-image: url(../imagens/cev-portrait);
         background-position: center bottom;
     }
 }
